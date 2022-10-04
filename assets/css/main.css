@@ -1,0 +1,273 @@
+/*==================== GOOGLE FONT ====================*/
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&family=Lato:wght@300;400;700&display=swap');
+/*==================== ROOT ====================*/
+:root{
+  --color-verde: #5CA720;
+  --color-white-2: #F9F9F9;
+  --color-white-1: #ffffff;
+  --color-cinza: #A5A1A1;
+  --color-preto: #161616;
+  --bg: #E5E5E5;
+}
+/*==================== RESERT ====================*/
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/*==================== CONFIG GLOBAL ====================*/
+html{scroll-behavior: smooth;}
+body{
+  font-family: 'Lato', sans-serif;
+  background-color: var(--bg);
+  color: var(--color-preto);
+  line-height: 1.5;
+  font-size: 18px;
+  font-weight: 400;
+}
+a{text-decoration: none;}
+ul{list-style: none;}
+.container{
+  width: 90%;
+  margin: 0 auto;
+  transition: width .3s linear;
+  -webkit-transition: width .3s linear;
+  -moz-transition: width .3s linear;
+  -ms-transition: width .3s linear;
+  -o-transition: width .3s linear;
+}
+/*==================== HEADER ====================*/
+.header-main{
+  background-color: #ffffff;
+  box-shadow: 0px 1px 6px rgba(0,0,0, 0.2);
+  width: 100%;
+}
+.header-main .container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 31px 0px;
+}
+.header-main .container .logo a{
+  font-family: 'Cabin', sans-serif;
+  font-weight: 500;
+  font-size: 25.83px;
+  line-height: 31px;
+  color: var(--color-preto);
+}
+.header-main .container .navbar{
+  display: flex;
+  gap: 30px;
+  color: var(--color-verde);
+}
+.header-main .container .navbar .pesquisar,
+.header-main .container .navbar .login,
+.header-main .container .navbar .carrinho{
+  cursor: pointer;
+}
+/*==================== HERO ====================*/
+.hero-image img{
+  position: relative;
+  height: 375px;
+  width: 100%;
+  background-color: var(--color-verde);
+}
+/*==================== SECTION MAIN ====================*/
+.title{
+  border-bottom: 0.2px solid #a5a1a149;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  margin-top: -10px;
+}
+.title .container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 85px;
+}
+.title .container h2{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+.title .container p{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.main{
+  background-color: rgb(255, 255, 255);
+}
+.main .container .row{
+  max-width: 100%;
+  display: grid;
+  grid-column-gap: 195px;
+  grid-row-gap: 65px;
+  grid-template-columns: repeat(auto-fit, minmax(303px, 1fr));
+  justify-items: center;
+  padding-top: 57px;
+  padding-bottom: 116px;
+}
+.main .container .row .box{
+  display: flex;
+  flex-direction: column;
+  width: 303px;
+  height: 393px;
+  position: relative;
+}
+.main .container .row .box .produto img{
+  height: 303px;
+  width: 100%;
+  border-radius: 5px;
+  transition: transform .2s;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  -webkit-transition: transform .2s;
+  -moz-transition: transform .2s;
+  -ms-transition: transform .2s;
+  -o-transition: transform .2s;
+  cursor: pointer;
+}
+.main .container .row .box .produto img:hover{
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+.main .container .row .box p{
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.main .container .row .box .valor{
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+}
+.main .container .row .box .valor span{
+  color: var(--color-verde);
+}
+/*==================== footer ====================*/
+footer{
+  background-color: var(--color-white-2);
+}
+.footer-top{
+  padding-top: 40px;
+  border-bottom: 0.2px solid #a5a1a149;
+  padding-bottom: 50px;
+}
+.footer-top .container{
+  display: flex;
+  justify-content: space-between;
+}
+.footer-top .container .box-left ul li a{
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--color-preto);
+}
+.footer-top .container .box-right p{
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+}
+input{
+  background: #FFFFFF;
+  border: 0.5px solid #D9D9D9;
+  border-radius: 5px 0px 0px 5px;
+  color: #A8A4A4;
+  padding: 15px 13px 15px;
+  margin-top: 18px;
+}
+button{
+  background-color: #5CA720;
+  border-radius: 4px;
+  padding: 11px 34px 13px;
+  color: #FFFFFF;
+  letter-spacing: 0.01em;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+  text-align: center;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+button:hover{
+  background-color: #6ef103;
+}
+.footer-bottom .container{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 43.01px;
+  padding-bottom: 55.51px;
+}
+.footer-bottom .container .social-left ul{
+  display: flex;
+  gap: 20.11px;
+}
+.footer-bottom .container .social-left ul li a{
+  cursor: pointer;
+  font-size: 33.48px;
+  color: var(--color-verde);
+}
+.footer-bottom .container .pagamentos ul{
+  display: flex;
+  gap: 23px;
+}
+
+/*==================== RESPONSIVE ====================*/
+@media screen and (max-width: 768px) {
+  .hero-image img{
+    height: 221.09px;
+  }
+}
+@media screen and (max-width: 890px) {
+  .footer-top .container{
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-top .container .box-right p{
+    margin-top: 54px;
+  }
+  .main .container .row{
+    grid-column-gap: 92px;
+    grid-row-gap: 60px;
+    grid-template-columns: repeat(auto-fit, minmax(120.44px, 1fr));
+    justify-items: center;
+  }
+  .main .container .row .box{
+    width: 100%;
+    height: auto;
+  }
+  .main .container .row .box p{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .main .container .row .box .valor{
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .main .container .row .box .produto img{
+    width: 126.44px;
+    height: 126.44px;
+  }
+  button{
+    margin-top: 17px;
+  }
+}
+
