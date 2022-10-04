@@ -1,4 +1,6 @@
-# Desafio-selfcare <a href="https://github.com/thaysagomes/selfcare">Desafio</a>
+# Desafio Selfcare 
+
+Mais informação -> <a href="https://devchallenge.com.br">DevChallenge</a> 
 
 
 # Dev Setup (VS Code)
