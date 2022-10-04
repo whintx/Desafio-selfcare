@@ -1,6 +1,6 @@
 # Desafio Selfcare 
 
-Mais informações -> <a target="_blank" href="https://devchallenge.com.br">DevChallenge</a> 
+Mais informações -> <a href="https://devchallenge.com.br">DevChallenge</a> 
 
 
 # Dev Setup (VS Code)
